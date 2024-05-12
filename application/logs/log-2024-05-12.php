@@ -75,3 +75,5 @@ ERROR - 2024-05-12 20:15:43 --> 404 Page Not Found: Assets/css
 ERROR - 2024-05-12 20:15:59 --> 404 Page Not Found: Assets/css
 ERROR - 2024-05-12 20:16:19 --> 404 Page Not Found: Assets/css
 ERROR - 2024-05-12 20:30:56 --> 404 Page Not Found: Assets/css
+ERROR - 2024-05-12 21:16:47 --> Severity: error --> Exception: Unable to locate the model you have specified: LoginModel C:\xampp\htdocs\S6\Construction\system\core\Loader.php 344
+ERROR - 2024-05-12 21:25:16 --> Severity: error --> Exception: syntax error, unexpected double-quoted string "back" C:\xampp\htdocs\S6\Construction\application\controllers\Login.php 26

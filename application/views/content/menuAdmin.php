@@ -38,7 +38,7 @@
     </div>
     <hr class="horizontal dark mt-0">
 
-    <!-- Liste -->
+    <!-- Effacer donnees -->
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100 h-100" id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
