@@ -6,9 +6,9 @@
                 © <script>
                   document.write(new Date().getFullYear())
                 </script>,
-                made with <i class="fa fa-heart"></i> by
-                <av class="font-weight-bold" target="_blank"> Zavatra milay </a>
-                for a better web.
+                made by
+                <av class="font-weight-bold" target="_blank"> Home Construction </a>
+                for a better house.
               </div>
             </div>
           </div>
