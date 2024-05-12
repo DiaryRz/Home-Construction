@@ -10,4 +10,26 @@ class LoginModel extends CI_Model {
         return $query->result();
     }
 
+    function InsertUtilisateur($nom , $dtn , $mail , $mdp  , $idsexe){
+        $data = array(
+            'nom' => $nom,
+            'dtn' =>  $dtn,
+            'email' =>  $mail,
+            'mdp' =>  $mdp,
+            'idsexe' => $idsexe
+        );
+        
+        $this->db->insert('utilisateur', $data);
+        return $this->db->insert_id();
+    }
+
+    function SelectSexe(){
+        $this->load->database();
+        $this->db->select('*');
+        $this->db->from('sexe');
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+
 }

@@ -11,7 +11,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="generator" content="Hugo 0.104.2">
     <link href="<?php echo site_url("assets/bootstrap-5.0.2-dist/css/bootstrap.min.css") ?>" rel="stylesheet">
     <link href="<?php echo site_url("assets/Login.css") ?>" rel="stylesheet">
+    <link rel="icon" type="image/png" href="<?php echo base_url() ?>/assets/img/logo.png">
     <title>Login form</title>
+    <style>
+      .lien{
+        text-align : center;
+      }
+    </style>
 </head>
 <body>    
   <div class="form_login">
@@ -32,6 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
                 <div class="erreur">mot de passe ou email incorrecte</div>
               </form>
+              <div class="lien"><a href="<?php echo base_url('Login/pageInscription') ?>">Inscrivez_vous!</a></div>
           <?php } else{ ?>
             <form action="<?php echo site_url('Login/ValiderLogin')?>" method="post">
                 <div class="form-group">
@@ -46,6 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <input class="form-control btn btn-primary" type="submit" value="Se connecter">
                 </div>
             </form>
+            <div class="lien"><a href="<?php echo base_url('Login/pageInscription') ?>">Inscrivez_vous!</a></div>
         <?php  } ?>
   </div>          
 </body>
