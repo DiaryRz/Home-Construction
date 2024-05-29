@@ -42,3 +42,11 @@ insert into devis(idclient,idtypemaison,idtypefinition,datededebuttravaux,totalp
 (1,2,2,'2024-05-02',10000,10,200),
 (2,1,1,'2024-05-02',112545,12,100);
 
+
+-- travaux par type maison
+insert into travauxpartypemaison(idtypemaison,idtravaux,quantite,prixunitaire) values
+(1,11 , 12 , 12500),
+(1,12 , 2.5 , 1200),
+(2,13 , 23 , 200);
+
+-- insert into typetravaux(idtypetravaux,numerotypetravaux,nomtyetravaux) values(1,'1','travaux');

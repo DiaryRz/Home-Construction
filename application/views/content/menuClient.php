@@ -41,16 +41,24 @@
     <!-- Effacer donnees -->
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100 h-100" id="sidenav-collapse-main">
       <ul class="navbar-nav">
-        <!-- <li class="nav-item">
+        <li class="nav-item">
           <a 
             class="nav-link  " 
-            href="<?php echo base_url("NettoyerBaseController") ?>"
+            href="<?php echo base_url("DevisClientController") ?>"
           >
-            <i class="fa fa-trash"></i>
-            <span class="nav-link-text ms-1">Nettoyer les données</span>
+            <i class="bi bi-trash"></i>
+            <span class="nav-link-text ms-1">Liste de vos devis</span>
           </a>
-        </li> -->
-
+        </li>
+        <li class="nav-item">
+          <a 
+            class="nav-link  " 
+            href="<?php echo base_url("DevisClientController/FormulaireCreerDevis") ?>"
+          >
+            <i class="bi bi-trash"></i>
+            <span class="nav-link-text ms-1">Création de devis</span>
+          </a>
+        </li>
       </ul>
     </div>
     </div>

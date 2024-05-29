@@ -46,11 +46,82 @@
             class="nav-link  " 
             href="<?php echo base_url("NettoyerBaseController") ?>"
           >
-            <i class="fa fa-trash"></i>
+            <!-- <i class="fa fa-trash"></i> -->
             <span class="nav-link-text ms-1">Nettoyer les données</span>
           </a>
         </li>
 
+        <li class="nav-item">
+          <a 
+            class="nav-link  " 
+            href="<?php echo base_url("DevisAdminController/index") ?>"
+          >
+            <!-- <i class="fa fa-trash"></i> -->
+            <span class="nav-link-text ms-1">Liste des devis en cours</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a 
+            class="nav-link  " 
+            href="<?php echo base_url("DevisAdminController/MontantTotalDevis") ?>"
+          >
+            <!-- <i class="fa fa-trash"></i> -->
+            <span class="nav-link-text ms-1">Montant totales des devis</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a 
+            class="nav-link  " 
+            href="<?php echo base_url("DevisAdminController/FormulaireStat") ?>"
+          >
+            <!-- <i class="fa fa-trash"></i> -->
+            <span class="nav-link-text ms-1">Chiffre d'affaire par mois</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a 
+            class="nav-link  " 
+            href="<?php echo base_url("ImportController/formulaireMaisonEtTravaux") ?>"
+          >
+            <!-- <i class="fa fa-trash"></i> -->
+            <span class="nav-link-text ms-1">Import des travaux et types de maison</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a 
+            class="nav-link  " 
+            href="<?php echo base_url("ImportPayementController/formulaire") ?>"
+          >
+            <!-- <i class="fa fa-trash"></i> -->
+            <span class="nav-link-text ms-1">Import des paiements</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a 
+            class="nav-link  " 
+            href="<?php echo base_url("ModificationController/index") ?>"
+          >
+            <!-- <i class="fa fa-trash"></i> -->
+            <span class="nav-link-text ms-1">Modification des pourcentages des finiitons</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a 
+            class="nav-link  " 
+            href="<?php echo base_url("ModificationController/listetravaux") ?>"
+          >
+            <!-- <i class="fa fa-trash"></i> -->
+            <span class="nav-link-text ms-1">Modification des traaux</span>
+          </a>
+        </li>
+
+        
 
       </ul>
 

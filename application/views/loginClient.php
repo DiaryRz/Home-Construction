@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <div class="form_login">
         <h1>Connectez-vous!</h1>
         <?php echo validation_errors('<div class="error">', '</div>'); ?>
-        <form action="<?php echo site_url('DevisClientController/Inserer')?>" method="post">
+        <form action="<?php echo site_url('Login/LoginClient')?>" method="post">
             <div class="form-group">
                 <Label>Numero : </Label>
                 <input class="form-control" type="text" name="numero" placeholder="Entrez votre numero de telephone">
@@ -41,7 +41,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <input class="form-control btn btn-primary" type="submit" value="Se connecter">
             </div>
         </form>
-        <div class="lien"><a href="<?php echo base_url("Login") ?>">Se connecter en tant qu'administrateur</a></div>
   </div>          
 </body>
 </html>

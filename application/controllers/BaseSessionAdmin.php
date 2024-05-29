@@ -1,16 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class BaseSessionAdmin extends CI_Controller {
+include('BaseSession.php');
+
+class BaseSessionAdmin extends BaseSession {
 
     public function __construct(){
         parent::__construct();
-        if(!$this->session->has_userdata('idUtilisateur')) {
+        if($this->session->userdata('identifiant') != 1) {
+            echo "admin ".$this->session->userdata('identifiant');
             redirect('Login');
-        } else {
-            if($this->session->userdata('identifiant') != 1) {
-                redirect('Login');
-            }
         }
         
     }

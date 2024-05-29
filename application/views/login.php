@@ -53,7 +53,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <input class="form-control btn btn-primary" type="submit" value="Se connecter">
                 </div>
             </form>
-            <div class="lien"><a href="<?php echo base_url('Login/FormulaireLoginClient') ?>">Se conneter en tant que client</a></div>
         <?php  } ?>
   </div>          
 </body>

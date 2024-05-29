@@ -9,6 +9,10 @@ class Login extends CI_Controller {
     }
 
 	public function index(){
+		$this->load->view('LoginClient');
+	}
+
+	public function FormulaireLoginAdmin(){
 		$this->load->view('login');
 	}
 	
@@ -30,7 +34,7 @@ class Login extends CI_Controller {
 			}
 		}
 		if($variable == true){
-			$this->acceuilBackOffice();
+			redirect('DevisAdminController/index');
 		}
 		else{
 			$tab['mailfaux'] = $_POST['email'];
@@ -54,33 +58,33 @@ class Login extends CI_Controller {
 		redirect("Login");
 	}
 
-	public function FormulaireLoginClient(){
-		$this->load->view('LoginClient');
-	}
-
 	public function LoginClient(){
 		$this->form_validation->set_rules('numero', 'Numero de telephone', 'trim|required|numeric');
 
 		if ($this->form_validation->run() == FALSE) {
-            $this->FormulaireLoginClient();
+            $this->FormulaireLoginAdmin();
         }else{
 			$numero = $_POST['numero'] ;
 			$SiClientExiste = $this->LoginModel->VerifClient($numero);
 			$identifiant = 0;
 			if($SiClientExiste == false){
+				echo "heyyeyeyeye";
 				$id = $this->LoginModel->InsertionClient($numero);
 				if ($this->session->has_userdata('identifiant')) {
 					$this->session->unset_userdata('identifiant');
 				}
 				$this->session->set_userdata("idutilisateur" , $id);
+				echo "lalallala ".$this->session->userdata('idutilisateur');
 				$this->session->set_userdata("identifiant" , 0);
 				$this->acceuilFrontOffice();
 			}else{
+				echo "heyyeyeyeye2";
 				$id = $this->LoginModel->SelectClientParNumero($numero)->idclient;
 				if ($this->session->has_userdata('identifiant')) {
 					$this->session->unset_userdata('identifiant');
 				}
 				$this->session->set_userdata("idutilisateur" , $id);
+				echo "lalalalaala ".$this->session->userdata('idutilisateur');
 				$this->session->set_userdata("identifiant" , 0);
 				$this->acceuilFrontOffice();
 			}
